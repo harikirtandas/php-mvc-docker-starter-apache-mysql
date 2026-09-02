@@ -1,0 +1,13 @@
+{
+    "name": "harikirtandas/php-mvc-docker-starter-apache-mysql",
+    "description": "Esqueleto MVC minimo, sin dependencias externas",
+    "type": "project",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # sirve archivos y directorios existentes tal cual (css/, js/, img/)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # manda todo lo demas a index.php: el router de App\Core\Router resuelve
+    # la ruta a partir de ahi. esta regla es el corazon del esquema MVC, no
+    # es borrable como en el starter plano
+    RewriteRule ^ index.php [L]
+</IfModule>
