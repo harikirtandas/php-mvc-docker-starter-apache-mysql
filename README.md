@@ -15,7 +15,7 @@ router propio con soporte de parametros dinamicos.
 ## Crear un proyecto nuevo desde este template
 
 ```bash
-gh repo create mi-proyecto --template TU_USUARIO/php-mvc-docker-starter-apache-mysql --private --clone
+gh repo create mi-proyecto --template harikirtandas/php-mvc-docker-starter-apache-mysql --private --clone
 cd mi-proyecto
 make install
 ```
@@ -179,7 +179,7 @@ falta editar codigo para cambiarlas.
 
 ## Arrancar un proyecto real
 
-1. `gh repo create mi-proyecto --template TU_USUARIO/php-mvc-docker-starter-apache-mysql --private --clone && cd mi-proyecto`
+1. `gh repo create mi-proyecto --template harikirtandas/php-mvc-docker-starter-apache-mysql --private --clone && cd mi-proyecto`
 2. Reemplazar `docker/mysql/init/01-schema.sql` por el schema real del proyecto (o agregar mas archivos `.sql` numerados).
 3. Borrar el vertical slice demo (`Item`, `HomeController`, `ItemController`, las vistas de `home/` e `items/`) y reemplazarlo por los Controllers/Models/Views propios del proyecto.
 4. `make install` — levanta todo e instala las dependencias de Composer.
